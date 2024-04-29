@@ -4,43 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEU Tech Announcement</title>
-    <style>
-        body {
-            background-image: url('announcement-background-design_23-2151168497.jpg');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 36px;
-            margin-top: 20px;
-        }
-
-        h2 {
-            color: #333;
-            font-size: 24px;
-        }
-
-        p {
-            color: #333;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-    </style>
 </head>
 <body>
 
