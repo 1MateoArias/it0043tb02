@@ -26,41 +26,7 @@
 <body>
     <h2>Add Pokémon</h2>
     <form action="#" method="post" enctype="multipart/form-data">
-        <label for="nationalDex">National Dex:</label>
-        <input type="number" id="nationalDex" name="nationalDex" min="0"><br><br>
-
-        <label for="pokemonName">Pokémon Name:</label>
-        <input type="text" id="pokemonName" name="pokemonName"><br><br>
-
-        <label for="generation">Generation:</label><br>
-        <input type="radio" id="gen1" name="generation" value="gen1">
-        <label for="gen1">Gen I</label><br>
-        <input type="radio" id="gen2" name="generation" value="gen2">
-        <label for="gen2">Gen II</label><br>
-        <!-- Add more radio buttons for other generations -->
-
-        <label for="image">Image:</label>
-        <input type="file" id="image" name="image"><br><br>
-
-        <label for="type1">Type 1:</label>
-        <!-- Add dropdown or datalist for type 1 -->
-
-        <label for="type2">Type 2:</label>
-        <!-- Add dropdown or datalist for type 2 -->
-
-        <label for="evolvesFrom">Evolves From:</label>
-        <input type="text" id="evolvesFrom" name="evolvesFrom"><br><br>
-
-        <label for="evolvesTo">Evolves To:</label>
-        <input type="text" id="evolvesTo" name="evolvesTo"><br><br>
-
-        <label for="nickname">Nickname:</label>
-        <input type="text" id="nickname" name="nickname"><br><br>
-
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br><br>
-
-        <input type="submit" value="Submit">
+        <!-- Your form elements -->
     </form>
 
     <h2>Pokémon Table</h2>
@@ -76,7 +42,40 @@
             <th>Nickname</th>
             <th>Birthday</th>
         </tr>
-        <!-- Add table rows for each Pokémon -->
+        <tr>
+            <td>1</td>
+            <td>Bulbasaur</td>
+            <td>Gen I</td>
+            <td><img src="bulbasaur.png" alt="Bulbasaur"></td>
+            <td>Grass/Poison</td>
+            <td>None</td>
+            <td>Ivysaur</td>
+            <td>Bulby</td>
+            <td>1996-02-27</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Charmander</td>
+            <td>Gen I</td>
+            <td><img src="charmander.png" alt="Charmander"></td>
+            <td>Fire</td>
+            <td>None</td>
+            <td>Charmeleon</td>
+            <td>Char</td>
+            <td>1996-02-29</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Squirtle</td>
+            <td>Gen I</td>
+            <td><img src="squirtle.png" alt="Squirtle"></td>
+            <td>Water</td>
+            <td>None</td>
+            <td>Wartortle</td>
+            <td>Squirt</td>
+            <td>1996-03-01</td>
+        </tr>
+        <!-- Add rows for 7 more Pokémon -->
     </table>
 </body>
 </html>
