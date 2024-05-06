@@ -1,104 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>First Gen Pokemon Chart</title>
+    <title>First Gen Pokemon Chart</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .form-container {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
 
-<h1>First Gen Pokemon Chart</h1>
+<h1>Pokemon Chart</h1>
+
+<div class="form-container">
+    <h2>Add Pokémon</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nationalDex">National Dex:</label>
+        <input type="number" id="nationalDex" name="nationalDex" min="0"><br><br>
+
+        <label for="pokemonName">Pokémon Name:</label>
+        <input type="text" id="pokemonName" name="pokemonName"><br><br>
+
+        <label for="generation">Generation:</label><br>
+        <input type="radio" id="gen1" name="generation" value="gen1">
+        <label for="gen1">Gen I</label><br>
+        <input type="radio" id="gen2" name="generation" value="gen2">
+        <label for="gen2">Gen II</label><br>
+        <!-- Add more radio buttons for other generations -->
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image"><br><br>
+
+        <label for="type1">Type 1:</label>
+        <!-- Add dropdown or datalist for type 1 -->
+
+        <label for="type2">Type 2:</label>
+        <!-- Add dropdown or datalist for type 2 -->
+
+        <label for="evolvesFrom">Evolves From:</label>
+        <input type="text" id="evolvesFrom" name="evolvesFrom"><br><br>
+
+        <label for="evolvesTo">Evolves To:</label>
+        <input type="text" id="evolvesTo" name="evolvesTo"><br><br>
+
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname"><br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
 
 <table border="1">
-
-<thead>	
-	<tr>	
-		<td>	Image</td>
-		<td>	Name</td>
-		<td>	Type</td>
-		<td>	Evolves Into</td>
-	</tr>
-</thead>	
-
-
-
-<tbody>	
-<tr>	
-<td>	<img src="<!DOCTYPE html>
-<html>
-<head>
-	<title>First Gen Pokemon Chart</title>
-</head>
-<body>
-
-<h1>First Gen Pokemon Chart</h1>
-
-<table border="1">
-
-<thead>	
-	<tr>	
-		<td>	Image</td>
-		<td>	Name</td>
-		<td>	Type</td>
-		<td>	Evolves Into</td>
-	</tr>
-</thead>	
-
-
-
-<tbody>	
-<tr>	
-<td>	<img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
-<td>	Arias</td>
-<td>	Poison</td>
-</tr>
-
-<tr>	
-<td>	<img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-<td>	Charmander</td>
-<td>	Fire</td>
-<td>	<a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
-</tr>
-
-<tr>	
-<td>	<img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
-<td>	Squirtle</td>
-<td>	Water</td>
-<td>	<a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
-</tr>
-
-</tbody>
-
-
+    <thead>    
+        <tr>    
+            <td>Image</td>
+            <td>Name</td>
+            <td>Type</td>
+            <td>Evolves Into</td>
+            <td>National Index</td>
+            <td>Generation</td>
+            <td>Evolves From</td>
+        </tr>
+    </thead>    
+    <tbody>    
+        <tr>    
+            <td><img src="Resize image project.png"></td>
+            <td>Arias</td>
+            <td>Poison</td>
+            <td><a href="https://m.facebook.com/Jr.DREW11/">JMArias</a></td>
+            <td>---</td> <!-- Placeholder for National Index -->
+            <td>---</td> <!-- Placeholder for Generation -->
+            <td>---</td> <!-- Placeholder for Evolves From -->
+        </tr>
+        <tr>    
+            <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
+            <td>Charmander</td>
+            <td>Fire</td>
+            <td><a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
+            <td>004</td> <!-- National Index for Charmander -->
+            <td>Gen I</td> <!-- Generation for Charmander -->
+            <td>---</td> <!-- Placeholder for Evolves From -->
+        </tr>
+        <tr>    
+            <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
+            <td>Squirtle</td>
+            <td>Water</td>
+            <td><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
+            <td>007</td> <!-- National Index for Squirtle -->
+            <td>Gen I</td> <!-- Generation for Squirtle -->
+            <td>---</td> <!-- Placeholder for Evolves From -->
+        </tr>
+    </tbody>
 </table>
-
 
 </body>
 </html>
-img4.wikia.nocookie.net"></td>
-<td>	Bulbasaur</td>
-<td>	Grass/Poison</td>
-<td>	<a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
-</tr>
-
-<tr>	
-<td>	<img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-<td>	Charmander</td>
-<td>	Fire</td>
-<td>	<a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
-</tr>
-
-<tr>	
-<td>	<img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
-<td>	Squirtle</td>
-<td>	Water</td>
-<td>	<a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
-</tr>
-
-</tbody>
-
-
-</table>
-
-
-</body>
-</html>
-img4.wikia.nocookie.net
