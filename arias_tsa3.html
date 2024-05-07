@@ -219,33 +219,31 @@
         `;
 
         // Apply color to type cells
-        const typeCells = newRow.querySelectorAll('td:nth-child(3)');
-        typeCells.forEach(cell => {
-            const types = cell.textContent.split(' / ');
-            const coloredTypes = types.map(type => {
-                switch(type.toLowerCase()) {
-                    case 'poison':
-                        return `<span class="poison" style="background-color: lightgreen">${type}</span>`;
-                    case 'fire':
-                        return `<span class="fire" style="background-color: orange">${type}</span>`;
-                    case 'water':
-                        return `<span class="water" style="background-color: blue">${type}</span>`;
-                    case 'grass':
-                        return `<span class="grass" style="background-color: green">${type}</span>`;
-                    case 'dragon':
-                        return `<span class="dragon" style="background-color: lightviolet">${type}</span>`;
-                    case 'flying':
-                        return `<span class="flying" style="background-color: burlywood">${type}</span>`;
-                    case 'psychic':
-                        return `<span class="psychic" style="background-color: lightpink">${type}</span>`;
-                    case 'poison/ ghost':
-                        return `<span class="poison ghost" style="background-color: lightgrey">${type}</span>`;
-                    default:
-                        return `<span class="${type.toLowerCase()}">${type}</span>`;
-                }
-            });
-            cell.innerHTML = coloredTypes.join(' / ');
+        const typeCell = newRow.querySelector('td:nth-child(3)');
+        const types = typeCell.textContent.split(' / ');
+        const coloredTypes = types.map(type => {
+            switch(type.toLowerCase()) {
+                case 'poison':
+                    return `<span class="poison" style="background-color: lightgreen">${type}</span>`;
+                case 'fire':
+                    return `<span class="fire" style="background-color: orange">${type}</span>`;
+                case 'water':
+                    return `<span class="water" style="background-color: blue">${type}</span>`;
+                case 'grass':
+                    return `<span class="grass" style="background-color: green">${type}</span>`;
+                case 'dragon':
+                    return `<span class="dragon" style="background-color: lightviolet">${type}</span>`;
+                case 'flying':
+                    return `<span class="flying" style="background-color: burlywood">${type}</span>`;
+                case 'psychic':
+                    return `<span class="psychic" style="background-color: lightpink">${type}</span>`;
+                case 'poison/ ghost':
+                    return `<span class="poison ghost" style="background-color: lightgrey">${type}</span>`;
+                default:
+                    return `<span class="${type.toLowerCase()}">${type}</span>`;
+            }
         });
+        typeCell.innerHTML = coloredTypes.join(' / ');
 
         document.querySelector('table tbody').appendChild(newRow);
 
