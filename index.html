@@ -26,22 +26,26 @@
             display: inline-block;
             text-align: left;
         }
-        .grass {
-            background-color: #78C850; /* Grass type color */
-        }
-        .poison {
-            background-color: #A040A0; /* Poison type color */
-        }
-        .fire {
-            background-color: #F08030; /* Fire type color */
-        }
-        .water {
-            background-color: #6890F0; /* Water type color */
-        }
-        .electric {
-            background-color: #F8D030; /* Electric type color */
-        }
-        /* Add more colors for other types */
+
+        /* Define colors for different types */
+        .fire { background-color: #F08030; }
+        .water { background-color: #6890F0; }
+        .grass { background-color: #78C850; }
+        .electric { background-color: #F8D030; }
+        .normal { background-color: #A8A878; }
+        .fighting { background-color: #C03028; }
+        .flying { background-color: #A890F0; }
+        .poison { background-color: #A040A0; }
+        .ground { background-color: #E0C068; }
+        .rock { background-color: #B8A038; }
+        .bug { background-color: #A8B820; }
+        .ghost { background-color: #705898; }
+        .steel { background-color: #B8B8D0; }
+        .psychic { background-color: #F85888; }
+        .ice { background-color: #98D8D8; }
+        .dragon { background-color: #7038F8; }
+        .dark { background-color: #705848; }
+        .fairy { background-color: #EE99AC; }
     </style>
 </head>
 <body>
@@ -105,7 +109,7 @@
         <tr>    
             <td><img src="Resize image project.png"></td>
             <td>Arias</td>
-            <td class="poison">Poison</td>
+            <td>Poison</td>
             <td><a href="https://m.facebook.com/Jr.DREW11/">JMArias</a></td>
             <td>001</td> <!-- Placeholder for National Index -->
             <td>---</td> <!-- Placeholder for Generation -->
@@ -114,7 +118,7 @@
         <tr>    
             <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
             <td>Charmander</td>
-            <td class="fire">Fire</td>
+            <td>Fire</td>
             <td><a href="https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)">Charmeleon</a></td>
             <td>003</td> <!-- National Index for Charmander -->
             <td>Gen I</td> <!-- Generation for Charmander -->
@@ -123,13 +127,76 @@
         <tr>    
             <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
             <td>Squirtle</td>
-            <td class="water">Water</td>
+            <td>Water</td>
             <td><a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">Wartortle</a></td>
             <td>002</td> <!-- National Index for Squirtle -->
             <td>Gen I</td> <!-- Generation for Squirtle -->
             <td>Wartortle/Blastoise</td> <!-- Placeholder for Evolves From -->
         </tr>
         <!-- Add 7 more Pokémon here -->
+        <tr>    
+            <td><img src="bal.png"></td>
+            <td>Bulbasaur</td>
+            <td>Grass / Poison</td>
+            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)">Ivysaur</a></td>
+            <td>005</td> <!-- National Index for Bulbasaur -->
+            <td>Gen I</td> <!-- Generation for Bulbasaur -->
+            <td>Ivysaur</td> <!-- Placeholder for Evolves From -->
+        </tr>
+        <tr>    
+            <td><img src="Arceus (2).png"></td>
+            <td>Arceus</td>
+            <td>Normal</td>
+            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Arceus_(Pok%C3%A9mon)">Arceus</a></td>
+            <td>004</td> <!-- National Index for Arceus -->
+            <td>Gen IV</td> <!-- Generation for Arceus -->
+            <td>---</td> <!-- Evolves From Arceus -->
+        </tr>
+        <tr>    
+            <td><img src="pikachu.png"></td>
+            <td>Pikachu</td>
+            <td>Electric</td>
+            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)">Pikachu</a></td>
+            <td>007</td> <!-- National Index for Pikachu -->
+            <td>Gen I</td> <!-- Generation for Pikachu -->
+            <td>Raichu</td> <!-- Evolves From Raichu -->
+        </tr>
+        <tr>    
+            <td><img src="Reshiram.png"></td>
+            <td>Reshiram</td>
+            <td>Dragon/ Fire</td>
+            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Reshiram_(Pok%C3%A9mon)">Charmeleon</a></td>
+            <td>006</td> <!-- National Index for Reshiram -->
+            <td>Gen V</td> <!-- Generation for Reshiram -->
+            <td>---</td> <!--  -->
+        </tr>
+        <tr>    
+            <td><img src="charizard.jpg"></td>
+            <td>Charizard</td>
+            <td>Flying/ Fire</td>
+            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pok%C3%A9mon)">Charizard</a></td>
+            <td>009</td> <!-- National Index for Charizard -->
+            <td>Gen I</td> <!-- Generation for Charizard -->
+            <td>Charmeleon</td> <!-- Evolves From Charizard -->
+        </tr>
+        <tr>    
+            <td><img src="Mewtwo.png"></td>
+            <td>Mewtwo</td>
+            <td>Psychic</td>
+            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Mewtwo_(Pok%C3%A9mon)">Mewtwo</a></td>
+            <td>010</td> <!-- National Index for Mewtwo -->
+            <td>Gen IX</td> <!-- Generation for Mewtwo -->
+            <td>Mewtwonite</td> <!-- Evolves From Mewtwo -->
+        </tr>
+        <tr>    
+            <td><img src="Gengar.jpg"></td>
+            <td>Gengar</td>
+            <td>Poison/ Ghost</td>
+            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Gengar_(Pok%C3%A9mon)">Gengar</a></td>
+            <td>008</td> <!-- National Index for Gengar -->
+            <td>Gen I</td> <!-- Generation for Gengar -->
+            <td>Haunter</td> <!-- Evolves From Gengar -->
+        </tr>
     </tbody>
 </table>
 
@@ -144,12 +211,19 @@
         newRow.innerHTML = `
             <td><img src="${formData.get('image')}"></td>
             <td>${formData.get('pokemonName')}</td>
-            <td class="${formData.get('type1').toLowerCase()}">${formData.get('type1')} / ${formData.get('type2')}</td>
+            <td>${formData.get('type1')} / ${formData.get('type2')}</td>
             <td>${formData.get('evolvesTo')}</td>
             <td>${formData.get('nationalDex')}</td>
             <td>${formData.get('generation')}</td>
             <td>${formData.get('evolvesFrom')}</td>
         `;
+
+        // Apply color to type cells
+        const typeCells = newRow.querySelectorAll('td:nth-child(3)');
+        typeCells.forEach(cell => {
+            const types = cell.textContent.split(' / ');
+            cell.innerHTML = types.map(type => `<span class="${type.toLowerCase()}">${type}</span>`).join(' / ');
+        });
 
         document.querySelector('table tbody').appendChild(newRow);
 
