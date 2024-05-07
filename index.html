@@ -34,7 +34,7 @@
 
 <div class="form-container">
     <h2>Add Pokémon</h2>
-    <form id="pokemonForm" action="#" method="post" enctype="multipart/form-data">
+    <form action="#" method="post" enctype="multipart/form-data">
         <label for="nationalDex">National Dex:</label>
         <input type="number" id="nationalDex" name="nationalDex" min="0"><br><br>
 
@@ -42,9 +42,9 @@
         <input type="text" id="pokemonName" name="pokemonName"><br><br>
 
         <label for="generation">Generation:</label><br>
-        <input type="radio" id="gen1" name="generation" value="Gen I">
+        <input type="radio" id="gen1" name="generation" value="gen1">
         <label for="gen1">Gen I</label><br>
-        <input type="radio" id="gen2" name="generation" value="Gen II">
+        <input type="radio" id="gen2" name="generation" value="gen2">
         <label for="gen2">Gen II</label><br>
         <!-- Add more radio buttons for other generations -->
 
@@ -102,15 +102,6 @@
             <td><a href="https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)">Charmeleon</a></td>
             <td>003</td> <!-- National Index for Charmander -->
             <td>Gen I</td> <!-- Generation for Charmander -->
-            <td>---</td> <!-- Placeholder for Evolves From -->
-        </tr>
-        <tr>    
-            <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
-            <td>Squirtle</td>
-            <td>Water</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">Wartortle</a></td>
-            <td>002</td> <!-- National Index for Squirtle -->
-            <td>Gen I</td> <!-- Generation for Squirtle -->
             <td>---</td> <!-- Placeholder for Evolves From -->
         </tr>
         <!-- Add 7 more Pokémon here -->
@@ -179,30 +170,6 @@
         </tr>
     </tbody>
 </table>
-
-<script>
-    document.getElementById('pokemonForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
-        
-        const formData = new FormData(this);
-
-        const newRow = document.createElement('tr');
-
-        newRow.innerHTML = `
-            <td><img src="${formData.get('image')}"></td>
-            <td>${formData.get('pokemonName')}</td>
-            <td>${formData.get('type1')} / ${formData.get('type2')}</td>
-            <td>${formData.get('evolvesTo')}</td>
-            <td>${formData.get('nationalDex')}</td>
-            <td>${formData.get('generation')}</td>
-            <td>${formData.get('evolvesFrom')}</td>
-        `;
-
-        document.querySelector('table tbody').appendChild(newRow);
-
-        this.reset();
-    });
-</script>
 
 </body>
 </html>
