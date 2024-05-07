@@ -114,69 +114,6 @@
             <td>---</td> <!-- Placeholder for Evolves From -->
         </tr>
         <!-- Add 7 more Pokémon here -->
-        <tr>    
-            <td><img src="bal.png"></td>
-            <td>Bulbasaur</td>
-            <td>Grass / Poison</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)">Ivysaur</a></td>
-            <td>005</td> <!-- National Index for Bulbasaur -->
-            <td>Gen I</td> <!-- Generation for Bulbasaur -->
-            <td>Ivysaur</td> <!-- Placeholder for Evolves From -->
-        </tr>
-        <tr>    
-            <td><img src="Arceus (2).png"></td>
-            <td>Arceus</td>
-            <td>Normal</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Arceus_(Pok%C3%A9mon)">Arceus</a></td>
-            <td>004</td> <!-- National Index for Arceus -->
-            <td>Gen IV</td> <!-- Generation for Arceus -->
-            <td>---</td> <!-- Evolves From Arceus -->
-        </tr>
-        <tr>    
-            <td><img src="pikachu.png"></td>
-            <td>Pikachu</td>
-            <td>Electric</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)">Pikachu</a></td>
-            <td>007</td> <!-- National Index for Pikachu -->
-            <td>Gen I</td> <!-- Generation for Pikachu -->
-            <td>Raichu</td> <!-- Evolves From Raichu -->
-        </tr>
-        <tr>    
-            <td><img src="Reshiram.png"></td>
-            <td>Reshiram</td>
-            <td>Dragon/ Fire</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Reshiram_(Pok%C3%A9mon)">Charmeleon</a></td>
-            <td>006</td> <!-- National Index for Reshiram -->
-            <td>Gen V</td> <!-- Generation for Reshiram -->
-            <td>---</td> <!--  -->
-        </tr>
-        <tr>    
-            <td><img src="charizard.jpg"></td>
-            <td>Charizard</td>
-            <td>Flying/ Fire</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pok%C3%A9mon)">Charizard</a></td>
-            <td>009</td> <!-- National Index for Charizard -->
-            <td>Gen I</td> <!-- Generation for Charizard -->
-            <td>Charmeleon</td> <!-- Evolves From Charizard -->
-        </tr>
-        <tr>    
-            <td><img src="Mewtwo.png"></td>
-            <td>Mewtwo</td>
-            <td>Psychic</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Mewtwo_(Pok%C3%A9mon)">Mewtwo</a></td>
-            <td>010</td> <!-- National Index for Mewtwo -->
-            <td>Gen IX</td> <!-- Generation for Mewtwo -->
-            <td>Mewtwonite</td> <!-- Evolves From Mewtwo -->
-        </tr>
-        <tr>    
-            <td><img src="Gengar.jpg"></td>
-            <td>Gengar</td>
-            <td>Poison/ Ghost</td>
-            <td><a href="https://bulbapedia.bulbagarden.net/wiki/Gengar_(Pok%C3%A9mon)">Gengar</a></td>
-            <td>008</td> <!-- National Index for Gengar -->
-            <td>Gen I</td> <!-- Generation for Gengar -->
-            <td>Haunter</td> <!-- Evolves From Gengar -->
-        </tr>
     </tbody>
 </table>
 
@@ -186,10 +123,14 @@
         
         const formData = new FormData(this);
 
+        // Create a URL for the image file
+        const imageFile = formData.get('image');
+        const imageURL = URL.createObjectURL(imageFile);
+
         const newRow = document.createElement('tr');
 
         newRow.innerHTML = `
-            <td><img src="${formData.get('image')}"></td>
+            <td><img src="${imageURL}" style="max-width: 100px;"></td>
             <td>${formData.get('pokemonName')}</td>
             <td>${formData.get('type1')} / ${formData.get('type2')}</td>
             <td>${formData.get('evolvesTo')}</td>
@@ -199,6 +140,9 @@
         `;
 
         document.querySelector('table tbody').appendChild(newRow);
+
+        // Revoke the object URL to release resources
+        URL.revokeObjectURL(imageURL);
 
         this.reset();
     });
