@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Roboto';
+    background-image: url(https://c0.wallpaperflare.com/preview/475/1022/504/romania-rar%C4%83u-foggy-clean-thumbnail.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+.advisory {
+    color: green;
+    font-size: 3em;
+    text-align: center;
+}
+
+.title {
+    font-size: 4em;
+    text-align: center;
+}
+
+.strike {
+    color: red;
+    font-weight: bold;
+}
+
+.date {
+    color: rgb(226, 25, 52);
+}
+
+.content {
+    font-size: 1.2em;
+    font-style: center;
+}
+
+.safe {
+    color: green;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: right;
+}
+
+.techno,
+.hashtag {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.par1 {
+    color: black;
+    font-family: 'Rubik';
+}
+
+.par2 {
+    color: rgb(4, 121, 0);
+    font-weight: bold;
+}
+
+.end line {
+    font-family: 'Rubik';
+}
+
+.end {
+    color: rgb(20, 134, 25);
+    font-family: 'Oswald';
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
