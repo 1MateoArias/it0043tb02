@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
+            width: 100px;
+            margin-top: 20px;
+        }
+        .card h2 {
+            margin: 10px 0;
+        }
+        .card p {
+            padding: 0 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .card .type {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .type.grass { background-color: #78C850; }
+        .type.poison { background-color: #A040A0; }
+        .type.fire { background-color: #F08030; }
+        .type.water { background-color: #6890F0; }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://www.pngwing.com/en/free-png-kywqx" alt="Bayleef">
+            <h2>Bayleef</h2>
+            <span class="type grass">Grass</span>
+            <span class="type poison">Poison</span>
+            <p>Bulbasaur is a dual-type Grass/Poison Pokémon introduced in Generation I.</p>
+            <div class="buttons">
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="charmander.png" alt="Charmander">
+            <h2>Charmander</h2>
+            <span class="type fire">Fire</span>
+            <p>Charmander is a Fire-type Pokémon introduced in Generation I.</p>
+            <div class="buttons">
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="squirtle.png" alt="Squirtle">
+            <h2>Squirtle</h2>
+            <span class="type water">Water</span>
+            <p>Squirtle is a Water-type Pokémon introduced in Generation I.</p>
+            <div class="buttons">
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="chikorita.png" alt="Chikorita">
+            <h2>Chikorita</h2>
+            <span class="type grass">Grass</span>
+            <p>Chikorita is a Grass-type Pokémon introduced in Generation II.</p>
+            <div class="buttons">
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cyndaquil.png" alt="Cyndaquil">
+            <h2>Cyndaquil</h2>
+            <span class="type fire">Fire</span>
+            <p>Cyndaquil is a Fire-type Pokémon introduced in Generation II.</p>
+            <div class="buttons">
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="totodile.png" alt="Totodile">
+            <h2>Totodile</h2>
+            <span class="type water">Water</span>
+            <p>Totodile is a Water-type Pokémon introduced in Generation II.</p>
+            <div class="buttons">
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
