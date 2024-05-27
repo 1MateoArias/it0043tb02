@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-        background: url('https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg') no-repeat center center fixed;
+        background: url('pokemon bg.jpg') no-repeat center center fixed;
     background-size: cover;
 }
  
@@ -74,6 +74,6 @@ body {
 }
 
 .pokemon:hover {
-    background: url('https://static.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest/scale-to-width-down/767?cb=20140520015336') no-repeat center center;
+    background: url('pokeball.png') no-repeat center center;
     background-size: cover;
 }
