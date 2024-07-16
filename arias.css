@@ -1,84 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 body {
-    font-family: 'Roboto';
-    background-image: url(https://c0.wallpaperflare.com/preview/475/1022/504/romania-rar%C4%83u-foggy-clean-thumbnail.jpg);
-    background-size: cover;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1d1d1d;
+    color: #ffffff;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+nav {
+    background-color: #1d1d1d;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header img {
-    display: block;
-    margin: 0 auto;
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.advisory {
-    color: green;
-    font-size: 3em;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.section {
+    padding: 100px 1em 3em 1em;
     text-align: center;
 }
 
-.title {
-    font-size: 4em;
-    text-align: center;
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
-.strike {
-    color: red;
-    font-weight: bold;
+.section h2 span {
+    color: #ffffff;
 }
 
-.date {
-    color: rgb(226, 25, 52);
+.section p span {
+    color: #ff8c00;
 }
 
-.content {
-    font-size: 1.2em;
-    font-style: center;
-}
-
-.safe {
-    color: green;
-    font-size: 1.2em;
-}
-
-footer {
-    text-align: right;
-}
-
-.techno,
-.hashtag {
-    font-style: italic;
-    font-weight: bold;
-}
-
-.par1 {
-    color: black;
-    font-family: 'Rubik';
-}
-
-.par2 {
-    color: rgb(4, 121, 0);
-    font-weight: bold;
-}
-
-.end line {
-    font-family: 'Rubik';
-}
-
-.end {
-    color: rgb(20, 134, 25);
-    font-family: 'Oswald';
+#home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: bold;
+}
+
+#home .image {
+    margin-bottom: 1em;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+#home h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+#home .buttons {
+    margin-top: 1em;
+}
+
+button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#works .works-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work-item {
+    background-color: #333;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#about .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about .image {
+    margin-bottom: 1em;
+}
+
+#about a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#contact a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+#social {
+    background-color: #2E2E2C;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#social h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-family: 'Arial', sans-serif;
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-list li {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-list li:hover {
+    transform: scale(1.1);
+}
+
+.social-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.social-list a:hover {
+    color: #ff8c00;
+}
+
+.social-list i {
+    margin-right: 8px;
 }
